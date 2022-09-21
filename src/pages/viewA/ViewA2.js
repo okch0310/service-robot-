@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/header";
 import "../../styles/viewA/viewA2.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faPause, faStop } from "@fortawesome/free-solid-svg-icons";
 const ViewA = (props) => {
   const navigate = useNavigate();
   const locationArr = [
@@ -21,7 +21,7 @@ const ViewA = (props) => {
   ];
 
   const [index, setIndex] = useState(0);
-  const [icon, setIcon] = useState(true);
+  const [icon, setIcon] = useState(false);
   const onClick = () => {
     setIcon((current) => !current);
   };
@@ -30,11 +30,19 @@ const ViewA = (props) => {
       <Header headerText="전체 관람" />
       <div className="viewA2Wrapper">
         <div className="viewA2_top">
-          <div className="textWrapper">
-            <h1>"{locationArr[index]}"로 </h1>
+          {icon ? (
+            <div className="textWrapper">
+              <h1>계속 관람하시려면</h1>
+              <h1>재시작 버튼을 터치하세요.</h1>
+            </div>
+          ) : (
+            <div className="textWrapper">
+              <h1>"{locationArr[index]}"로 </h1>
 
-            <h1>이동 하시겠습니다.</h1>
-          </div>
+              <h1>이동 하시겠습니다.</h1>
+            </div>
+          )}
+
           <div className="iconWrapper">
             <div onClick={onClick} className="playBtn">
               {
@@ -45,6 +53,9 @@ const ViewA = (props) => {
                   <FontAwesomeIcon className="playIcon" icon={faPause} />
                 ))
               }
+            </div>
+            <div className="quitBtn">
+              <FontAwesomeIcon className="stopIcon" icon={faStop} />
             </div>
           </div>
         </div>

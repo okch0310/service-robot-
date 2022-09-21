@@ -8,7 +8,7 @@ const Header = ({ headerText }) => {
   return (
     <div className="headerWraper">
       <div className="text">
-        <h2>{headerText}</h2>
+        <h2 className="h2">{headerText}</h2>
       </div>
       <div className="icon" onClick={() => navigate("/")}>
         <FontAwesomeIcon icon={faHouse} className="homeIcon" />
