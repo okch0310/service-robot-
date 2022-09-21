@@ -16,7 +16,7 @@ const ViewA = (props) => {
 
       <button
         onClick={() => {
-          navigate("/");
+          navigate("/ViewA2");
         }}
       >
         Main

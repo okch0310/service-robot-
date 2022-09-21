@@ -1,0 +1,67 @@
+.viewA2Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .viewA2_top {
+    .textWrapper {
+      text-align: center;
+    }
+    .iconWrapper {
+      display: flex;
+      justify-content: center;
+      .playBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: aquamarine;
+        width: 200px;
+        height: 80px;
+        border-radius: 50px;
+        .playIcon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .viewA2_bottom {
+    margin-top: 150px;
+    .guideWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .currentLocation {
+        .number {
+          background-color: palevioletred;
+          border-radius: 100%;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          color: white;
+          line-height: 30px;
+          margin-right: 10px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        width: 300px;
+        height: 80px;
+        border-radius: 10px;
+      }
+      .robotImg {
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+      }
+    }
+    .mapImgWrapper {
+      display: flex;
+      justify-content: center;
+      .mapImg {
+        width: 400px;
+      }
+    }
+  }
+}
