@@ -19,7 +19,7 @@ const ViewA = (props) => {
           navigate("/ViewA2");
         }}
       >
-        Main
+        NEXT
       </button>
     </div>
   );

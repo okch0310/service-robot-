@@ -10,6 +10,7 @@ const ViewA = (props) => {
     "자동차의 진화",
     "자동차의 동력원1",
     "자동차의 동력원2",
+    "자동차의 동력원2",
     "로봇을 활용한 자동차 생산 기술",
     "운전자 편의 시스템",
     "부품 전시",
@@ -61,7 +62,7 @@ const ViewA = (props) => {
         <div className="viewA2_bottom">
           <div className="guideWrapper">
             <div className="currentLocation">
-              <div className="number">{index + 1}</div>
+              <div className="number">{index}</div>
               {locationArr[index]}
             </div>
             <img className="robotImg" src="img/viewA2/robotImg.png"></img>
@@ -73,12 +74,8 @@ const ViewA = (props) => {
       </div>
       <button
         onClick={() => {
-          if (index != 9) {
-            setIndex((current) => current + 1);
-            console.log(index);
-          } else {
-            navigate("/GuideQuit");
-          }
+          setIndex((current) => current + 1);
+          console.log(index);
         }}
       >
         NEXT
