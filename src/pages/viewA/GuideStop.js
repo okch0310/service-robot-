@@ -13,12 +13,11 @@ const ViewA = (props) => {
       <div className="viewA2Wrapper">
         <div className="viewA2_top">
           <div className="textWrapper">
-            <h1>모든 안내를 마쳤습니다.</h1>
-            <h1>감사합니다.</h1>
+            <h1>전시품 안내를 중단하겠습니다.</h1>
           </div>
         </div>
         <div>
-          <img className="quitImg" src="img/viewA2/quitImg.png"></img>
+          <img className="quitImg" src="img/viewA2/stopImg.png"></img>
         </div>
         <div className="viewA2_bottom">
           <div className="guideWrapper">
@@ -35,7 +34,7 @@ const ViewA = (props) => {
       </div>
       <button
         onClick={() => {
-          navigate("/GuideStop");
+          navigate("/AutoComeback");
         }}
       >
         NEXT

@@ -13,18 +13,21 @@ const ViewA = (props) => {
       <div className="viewA2Wrapper">
         <div className="viewA2_top">
           <div className="textWrapper">
-            <h1>모든 안내를 마쳤습니다.</h1>
-            <h1>감사합니다.</h1>
+            <h1>자동 복귀를 위해</h1>
+            <h1>재시작 버튼을 터치하세요</h1>
+          </div>
+          <div className="iconWrapper">
+            <div className="playBtn">
+              <FontAwesomeIcon className="playIcon" icon={faPlay} />
+            </div>
           </div>
         </div>
-        <div>
-          <img className="quitImg" src="img/viewA2/quitImg.png"></img>
-        </div>
+
         <div className="viewA2_bottom">
           <div className="guideWrapper">
             <div className="currentLocation">
               <div className="number"></div>
-              감사합니다.
+              자동 복귀 중 입니다.
             </div>
             <img className="robotImg" src="img/viewA2/robotImg.png"></img>
           </div>
@@ -35,7 +38,7 @@ const ViewA = (props) => {
       </div>
       <button
         onClick={() => {
-          navigate("/GuideStop");
+          navigate("/Distance");
         }}
       >
         NEXT
