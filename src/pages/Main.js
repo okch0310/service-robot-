@@ -24,7 +24,7 @@ const Main = (props) => {
         <div className="btn3" onClick={() => navigate("/Introduce")}>
           과학관 소개
         </div>
-        <div className="btn4" onClick={() => navigate("/Camera")}>
+        <div className="btn4" onClick={() => navigate("/CameraPage")}>
           사진 찍기
         </div>
       </div>

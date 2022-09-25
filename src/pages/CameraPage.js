@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-const Camera = (props) => {
+
+const CameraPage = (props) => {
   const navigate = useNavigate();
 
   return (
@@ -17,4 +18,4 @@ const Camera = (props) => {
   );
 };
 
-export default Camera;
+export default CameraPage;

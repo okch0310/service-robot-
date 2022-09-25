@@ -1,8 +1,6 @@
 .mainWrapper {
   width: 580px;
   height: 850px;
-  border: black solid 3px;
-  background-color: gray;
 
   .mainHeader {
     text-align: center;
@@ -17,24 +15,28 @@
       width: 100px;
       height: 100px;
       background-color: #4baa42;
+      border-radius: 5px;
     }
 
     .btn2 {
       width: 100px;
       height: 100px;
       background-color: #8bc53e;
+      border-radius: 5px;
     }
 
     .btn3 {
       width: 100px;
       height: 100px;
       background-color: #6fa5f6;
+      border-radius: 5px;
     }
 
     .btn4 {
       width: 100px;
       height: 100px;
       background-color: #fc543c;
+      border-radius: 5px;
     }
   }
 }

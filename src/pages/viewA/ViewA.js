@@ -14,13 +14,16 @@ const ViewA = (props) => {
         <img className="img" src="img/viewA1.png"></img>
       </div>
 
-      <button
-        onClick={() => {
-          navigate("/ViewA2");
-        }}
-      >
-        NEXT
-      </button>
+      <div className="test">
+        <button
+          onClick={() => {
+            navigate("/ViewA2");
+          }}
+        >
+          NEXT
+        </button>
+        <div>여기에 쓴다.</div>
+      </div>
     </div>
   );
 };

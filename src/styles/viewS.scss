@@ -1,0 +1,13 @@
+.viewSHeader {
+  display: flex;
+  justify-content: center;
+  .h1 {
+    border-bottom: 1px solid black;
+  }
+}
+.btnWrapper {
+  .btnline1 {
+    display: flex;
+    justify-content: center;
+  }
+}

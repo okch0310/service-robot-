@@ -1,5 +1,5 @@
 import { Link, Router, Routes, Route } from "react-router-dom";
-import Camera from "./Camera";
+import CameraPage from "./CameraPage";
 import Introduce from "./Introduce";
 import Main from "./Main";
 import ViewA from "./viewA/ViewA";
@@ -27,7 +27,7 @@ function App() {
 
         <Route path="ViewS" element={<ViewS />} />
         <Route path="Introduce" element={<Introduce />} />
-        <Route path="Camera" element={<Camera />} />
+        <Route path="CameraPage" element={<CameraPage />} />
       </Routes>
     </div>
   );
