@@ -1,0 +1,43 @@
+.cameraWrapper {
+  display: flex;
+  justify-content: center;
+  .camera {
+    background-color: pink;
+    padding: 40px;
+    margin: 20px;
+    width: 80%;
+    height: 500px;
+  }
+}
+.cameraBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  .cameraBtn {
+    width: 300px;
+    height: 100px;
+    background-color: pink;
+    margin: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: white;
+    border-radius: 5px;
+  }
+}
+.bgWrapper {
+  .bgImg {
+    width: 100%;
+  }
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.guideWrapper {
+  .guideImg {
+    width: 100%;
+  }
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
