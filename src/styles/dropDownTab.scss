@@ -1,0 +1,33 @@
+.QWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-bottom: 1px solid gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .QIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    .QIcon {
+      color: white;
+      font-size: 25px;
+    }
+  }
+  .QText {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+}
+
+.AWrapper {
+  background-color: #fae7e4;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+}
