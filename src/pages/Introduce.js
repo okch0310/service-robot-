@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Tabs, Tab, AppBar } from "@material-ui/core";
 import DropDownTab from "../components/dropDownTab";
 import Header from "../components/header";
+import Tab2Header from "../components/tab2Header";
 
 const Introduce = (props) => {
   const navigate = useNavigate();
@@ -93,7 +94,7 @@ const Introduce = (props) => {
         />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        222222
+        <Tab2Header />
       </TabPanel>
       <TabPanel value={value} index={2}>
         333333
