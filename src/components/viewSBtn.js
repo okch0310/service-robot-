@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/viewSBtn.scss";
-const ViewSBtn = ({ imgSrc }) => {
+const ViewSBtn = ({ className, imgSrc }) => {
   return (
     <div>
-      <img className="btn" src={imgSrc}></img>
+      <img className={className} src={imgSrc}></img>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Main = (props) => {
 
         <h1>Main page</h1>
       </div>
-      <div className="btn">
+      <div className="btnBox">
         <div className="btn1" onClick={() => navigate("/ViewA")}>
           전체 관람
         </div>
