@@ -29,7 +29,7 @@ const ViewS = (props) => {
           <div onClick={() => setBtn1(!btn1)}>
             <ViewSBtn
               className={btn1 ? "btnClicked" : "btn"}
-              imgSrc={"/img/puppy.png"}
+              imgSrc={"/img/btn1.png"}
             />
           </div>
 
