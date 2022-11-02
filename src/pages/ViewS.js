@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/header";
 import "../styles/viewS.scss";
 import ViewSBtn from "../components/viewSBtn";
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("http://192.168.0.14:3000");
+
 const ViewS = (props) => {
   const navigate = useNavigate();
   const [btn1, setBtn1] = useState(false);
@@ -18,7 +19,7 @@ const ViewS = (props) => {
   const [btn9, setBtn9] = useState(false);
   const [btn10, setBtn10] = useState(false);
   let btnArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10];
-  const [message, setMessage] = useState("");
+
   const sendMessage = () => {
     console.log(btnArr);
     socket.emit("send_message", btnArr);
