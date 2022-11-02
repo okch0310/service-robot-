@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   .h1 {
+    font-size: 90px;
     border-bottom: 1px solid black;
   }
 }
 .btnWrapper {
+  margin-top: 30px;
   .btnline1 {
     display: flex;
     justify-content: center;

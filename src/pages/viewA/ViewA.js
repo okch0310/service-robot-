@@ -11,7 +11,7 @@ const ViewA = (props) => {
       <Header headerText="전체 관람" />
 
       <div className="imgWrapper">
-        <img className="img" src="img/viewA1.png"></img>
+        <img className="img" src="img/viewA1.png" alt="btn"></img>
       </div>
 
       <div className="test">
@@ -22,7 +22,6 @@ const ViewA = (props) => {
         >
           NEXT
         </button>
-        <div>여기에 쓴다.</div>
       </div>
     </div>
   );

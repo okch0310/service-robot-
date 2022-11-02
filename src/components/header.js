@@ -12,7 +12,7 @@ const Header = ({ headerText }) => {
       <div className="text">
         <h2 className="h2">{headerText}</h2>
       </div>
-      <div className="icon" onClick={() => navigate("/")}>
+      <div className="iconWrapper" onClick={() => navigate("/")}>
         <FontAwesomeIcon icon={faHouse} className="homeIcon" />
       </div>
     </div>

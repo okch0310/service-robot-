@@ -40,12 +40,21 @@ const Tab2Header = ({ headerText }) => {
       <div className="imgWrapper">
         {(() => {
           if (pageNum === 0)
-            return <img src="/img/introduce/tab2img0.png"></img>;
+            return (
+              <img className="img" src="/img/introduce/tab2img0.png"></img>
+            );
           else if (pageNum === 1)
-            return <img src="/img/introduce/tab2img1.png"></img>;
+            return (
+              <img className="img" src="/img/introduce/tab2img1.png"></img>
+            );
           else if (pageNum === 2)
-            return <img src="/img/introduce/tab2img2.png"></img>;
-          else return <img src="/img/introduce/tab2img3.png"></img>;
+            return (
+              <img className="img" src="/img/introduce/tab2img2.png"></img>
+            );
+          else
+            return (
+              <img className="img" src="/img/introduce/tab2img3.png"></img>
+            );
         })()}
       </div>
     </div>

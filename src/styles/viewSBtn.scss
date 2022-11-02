@@ -1,26 +1,27 @@
 .btn {
-  width: 150px;
-  height: 150px;
-  border-radius: 70px;
+  width: 400px;
+  height: 400px;
+  border-radius: 170px;
   margin: 10px;
-  border: 9px solid gray;
+  border: 20px solid gray;
 }
 
 .btnClicked {
-  width: 150px;
-  height: 150px;
-  border-radius: 70px;
+  width: 400px;
+  height: 400px;
+  border-radius: 170px;
   margin: 10px;
-  border: 9px solid skyblue;
+  border: 20px solid skyblue;
 }
 
 .guideStartBtn {
-  width: 300px;
-  height: 100px;
+  width: 600px;
+  height: 200px;
+  margin-top: 100px;
   background-color: skyblue;
   color: white;
   border-radius: 30px;
   text-align: center;
-  line-height: 100px;
-  font-size: 40px;
+  line-height: 200px;
+  font-size: 80px;
 }
