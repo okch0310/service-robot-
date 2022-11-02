@@ -8,24 +8,22 @@ const Main = (props) => {
   return (
     <div className="mainWrapper">
       <div className="mainHeader">
-        <h1>국립 대구 과학관에 오신 것을 환영합니다!</h1>
+        <h1 className="title">국립 대구 과학관에 오신 것을 환영합니다!</h1>
 
         <br></br>
-
-        <h1>Main page</h1>
       </div>
       <div className="btnBox">
         <div className="btn1" onClick={() => navigate("/ViewA")}>
-          전체 관람
+          <img className="btnImg" src="/img/main/a.png"></img>
         </div>
         <div className="btn2" onClick={() => navigate("/ViewS")}>
-          선택 관람
+          <img className="btnImg" src="/img/main/b.png"></img>
         </div>
         <div className="btn3" onClick={() => navigate("/Introduce")}>
-          과학관 소개
+          <img className="btnImg" src="/img/main/c.png"></img>
         </div>
         <div className="btn4" onClick={() => navigate("/CameraPage")}>
-          사진 찍기
+          <img className="btnImg" src="/img/main/d.png"></img>
         </div>
       </div>
     </div>

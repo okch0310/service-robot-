@@ -16,19 +16,23 @@ const CameraPage = (props) => {
   const [url, setUrl] = useState(null);
   const [imgSrc, setImgSrc] = useState(null);
 
+  const preCapture = () => {
+    setCounter(!counter);
+    console.log("pre");
+  };
   const capture = useCallback(() => {
     setTimeout(function () {
       console.log("Works!");
       console.log("capture");
       setTakePicture(!takePicture);
-
       const imageSrc = webcamRef.current.getScreenshot();
       setImgSrc(imageSrc);
       setUrl(imageSrc);
-    }, 3000);
+    }, 1000);
   }, [webcamRef, setImgSrc]);
-  const [takePicture, setTakePicture] = useState(false);
 
+  const [takePicture, setTakePicture] = useState(false);
+  const [counter, setCounter] = useState(false);
   const reCapture = () => {
     setUrl(null);
     setTakePicture(false);
@@ -36,8 +40,13 @@ const CameraPage = (props) => {
 
   return (
     <div>
-      <h1>Camera page</h1>
       <Header headerText={"사진 촬영"} />
+      {counter ? (
+        <div className="countWrapper">
+          <div className="countBox">3초 후 찍힙니다.</div>
+        </div>
+      ) : null}
+
       <div className="cameraWrapper">
         {takePicture ? (
           <img src={imgSrc} />
@@ -61,7 +70,13 @@ const CameraPage = (props) => {
             다시 찍기
           </div>
         ) : (
-          <div onClick={capture} className="cameraBtn">
+          <div
+            onClick={() => {
+              preCapture();
+              capture();
+            }}
+            className="cameraBtn"
+          >
             사진 찍기
           </div>
         )}

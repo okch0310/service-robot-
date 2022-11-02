@@ -42,13 +42,13 @@ const ViewS = (props) => {
           <div onClick={() => setBtn2(!btn2)}>
             <ViewSBtn
               className={btn2 ? "btnClicked" : "btn"}
-              imgSrc={"/img/cat.png"}
+              imgSrc={"/img/btn2.png"}
             />
           </div>
           <div onClick={() => setBtn3(!btn3)}>
             <ViewSBtn
               className={btn3 ? "btnClicked" : "btn"}
-              imgSrc={"/img/puppy.png"}
+              imgSrc={"/img/btn3.png"}
             />
           </div>
         </div>
@@ -56,13 +56,13 @@ const ViewS = (props) => {
           <div onClick={() => setBtn4(!btn4)}>
             <ViewSBtn
               className={btn4 ? "btnClicked" : "btn"}
-              imgSrc={"/img/cat.png"}
+              imgSrc={"/img/btn4.png"}
             />
           </div>
           <div onClick={() => setBtn5(!btn5)}>
             <ViewSBtn
               className={btn5 ? "btnClicked" : "btn"}
-              imgSrc={"/img/puppy.png"}
+              imgSrc={"/img/btn5.png"}
             />
           </div>
         </div>
@@ -70,19 +70,19 @@ const ViewS = (props) => {
           <div onClick={() => setBtn6(!btn6)}>
             <ViewSBtn
               className={btn6 ? "btnClicked" : "btn"}
-              imgSrc={"/img/cat.png"}
+              imgSrc={"/img/btn6.png"}
             />
           </div>
           <div onClick={() => setBtn7(!btn7)}>
             <ViewSBtn
               className={btn7 ? "btnClicked" : "btn"}
-              imgSrc={"/img/puppy.png"}
+              imgSrc={"/img/btn7.png"}
             />
           </div>
           <div onClick={() => setBtn8(!btn8)}>
             <ViewSBtn
               className={btn8 ? "btnClicked" : "btn"}
-              imgSrc={"/img/cat.png"}
+              imgSrc={"/img/btn8.png"}
             />
           </div>
         </div>
@@ -90,13 +90,13 @@ const ViewS = (props) => {
           <div onClick={() => setBtn9(!btn9)}>
             <ViewSBtn
               className={btn9 ? "btnClicked" : "btn"}
-              imgSrc={"/img/puppy.png"}
+              imgSrc={"/img/btn9.png"}
             />
           </div>
           <div onClick={() => setBtn10(!btn10)}>
             <ViewSBtn
               className={btn10 ? "btnClicked" : "btn"}
-              imgSrc={"/img/puppy.png"}
+              imgSrc={"/img/btn10.png"}
             />
           </div>
         </div>
