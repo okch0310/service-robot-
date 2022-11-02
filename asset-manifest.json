@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/servicerobot/static/css/main.00ab7c68.css",
-    "main.js": "/servicerobot/static/js/main.3eb49c0e.js",
+    "main.js": "/servicerobot/static/js/main.ad90fc36.js",
     "static/media/bg.jpg": "/servicerobot/static/media/bg.f0e9b9c1dceaf6c4836c.jpg",
     "index.html": "/servicerobot/index.html",
     "main.00ab7c68.css.map": "/servicerobot/static/css/main.00ab7c68.css.map",
-    "main.3eb49c0e.js.map": "/servicerobot/static/js/main.3eb49c0e.js.map"
+    "main.ad90fc36.js.map": "/servicerobot/static/js/main.ad90fc36.js.map"
   },
   "entrypoints": [
     "static/css/main.00ab7c68.css",
-    "static/js/main.3eb49c0e.js"
+    "static/js/main.ad90fc36.js"
   ]
 }
