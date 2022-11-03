@@ -54,20 +54,20 @@ const ViewS = (props) => {
           <div onClick={() => setBtn1(!btn1)}>
             <ViewSBtn
               className={btn1 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn1.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn1.png"}
             />
           </div>
 
           <div onClick={() => setBtn2(!btn2)}>
             <ViewSBtn
               className={btn2 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn2.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn2.png"}
             />
           </div>
           <div onClick={() => setBtn3(!btn3)}>
             <ViewSBtn
               className={btn3 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn3.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn3.png"}
             />
           </div>
         </div>
@@ -75,13 +75,13 @@ const ViewS = (props) => {
           <div onClick={() => setBtn4(!btn4)}>
             <ViewSBtn
               className={btn4 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn4.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn4.png"}
             />
           </div>
           <div onClick={() => setBtn5(!btn5)}>
             <ViewSBtn
               className={btn5 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn5.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn5.png"}
             />
           </div>
         </div>
@@ -89,19 +89,19 @@ const ViewS = (props) => {
           <div onClick={() => setBtn6(!btn6)}>
             <ViewSBtn
               className={btn6 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn6.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn6.png"}
             />
           </div>
           <div onClick={() => setBtn7(!btn7)}>
             <ViewSBtn
               className={btn7 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn7.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn7.png"}
             />
           </div>
           <div onClick={() => setBtn8(!btn8)}>
             <ViewSBtn
               className={btn8 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn8.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn8.png"}
             />
           </div>
         </div>
@@ -109,13 +109,13 @@ const ViewS = (props) => {
           <div onClick={() => setBtn9(!btn9)}>
             <ViewSBtn
               className={btn9 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn9.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn9.png"}
             />
           </div>
           <div onClick={() => setBtn10(!btn10)}>
             <ViewSBtn
               className={btn10 ? "btnClicked" : "btn"}
-              imgSrc={"/img/btn10.png"}
+              imgSrc={process.env.PUBLIC_URL + "/img/btn10.png"}
             />
           </div>
         </div>

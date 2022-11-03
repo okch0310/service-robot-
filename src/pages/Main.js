@@ -14,16 +14,32 @@ const Main = (props) => {
       </div>
       <div className="btnBox">
         <div className="btn1" onClick={() => navigate("/ViewA")}>
-          <img className="btnImg" src="/img/main/a.png" alt="img"></img>
+          <img
+            src={process.env.PUBLIC_URL + "/img/main/a.png"}
+            className="btnImg"
+            alt="img"
+          ></img>
         </div>
         <div className="btn2" onClick={() => navigate("/ViewS")}>
-          <img className="btnImg" src="/img/main/b.png" alt="img"></img>
+          <img
+            className="btnImg"
+            src={process.env.PUBLIC_URL + "/img/main/b.png"}
+            alt="img"
+          ></img>
         </div>
         <div className="btn3" onClick={() => navigate("/Introduce")}>
-          <img className="btnImg" src="/img/main/c.png" alt="img"></img>
+          <img
+            className="btnImg"
+            src={process.env.PUBLIC_URL + "/img/main/c.png"}
+            alt="img"
+          ></img>
         </div>
         <div className="btn4" onClick={() => navigate("/CameraPage")}>
-          <img className="btnImg" src="/img/main/d.png" alt="img"></img>
+          <img
+            className="btnImg"
+            src={process.env.PUBLIC_URL + "/img/main/d.png"}
+            alt="img"
+          ></img>
         </div>
       </div>
     </div>

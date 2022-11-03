@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import "../styles/tab2Header.scss";
 
 const Tab2Header = ({ headerText }) => {
-  const navigate = useNavigate();
+  //  const navigate = useNavigate();
   const [pageNum, setPageNum] = useState(0);
   console.log(pageNum);
 
@@ -41,19 +41,35 @@ const Tab2Header = ({ headerText }) => {
         {(() => {
           if (pageNum === 0)
             return (
-              <img className="img" src="/img/introduce/tab2img0.png"></img>
+              <img
+                className="pic"
+                src={process.env.PUBLIC_URL + "/img/introduce/tab2img0.png"}
+                alt="img"
+              ></img>
             );
           else if (pageNum === 1)
             return (
-              <img className="img" src="/img/introduce/tab2img1.png"></img>
+              <img
+                className="pic"
+                src={process.env.PUBLIC_URL + "/img/introduce/tab2img1.png"}
+                alt="img"
+              ></img>
             );
           else if (pageNum === 2)
             return (
-              <img className="img" src="/img/introduce/tab2img2.png"></img>
+              <img
+                className="pic"
+                src={process.env.PUBLIC_URL + "/img/introduce/tab2img2.png"}
+                alt="img"
+              ></img>
             );
           else
             return (
-              <img className="img" src="/img/introduce/tab2img3.png"></img>
+              <img
+                className="pic"
+                src={process.env.PUBLIC_URL + "/img/introduce/tab2img3.png"}
+                alt="img"
+              ></img>
             );
         })()}
       </div>
