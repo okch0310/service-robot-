@@ -81,11 +81,12 @@ const CameraPage = (props) => {
           </div>
         )}
       </div>
-      <div className="bgWrapper">
-        <img className="bgImg" src="/img/camera/cameraBg.png"></img>
-      </div>
+      <div className="bgWrapper"></div>
       <div className="guideWrapper">
-        <img className="guideImg" src="/img/camera/cameraGuide.png"></img>
+        <img
+          className="guideImg"
+          src={process.env.PUBLIC_URL + "/img/camera/cameraGuide.png"}
+        ></img>
       </div>
 
       <button

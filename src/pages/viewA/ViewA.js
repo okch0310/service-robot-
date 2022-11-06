@@ -6,6 +6,7 @@ import "../../styles/viewA/viewA.scss";
 
 const ViewA = (props) => {
   const navigate = useNavigate();
+  setTimeout(() => navigate("/ViewA2"), 3000);
   return (
     <div>
       <Header headerText="전체 관람" />

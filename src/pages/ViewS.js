@@ -24,10 +24,13 @@ const ViewS = (props) => {
   const [btn10, setBtn10] = useState(false);
   let btnArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10];
 
-  //const [msg, setMsg] = useState("");
+  const [msg, setMsg] = useState("");
 
   socket.on("connect", () => {
     console.log("연결 성공");
+  });
+  socket.on("server_msg", (data) => {
+    console.log(`서버에게 받은 메시지: ${data}`);
   });
 
   const sendCtoS = () => {
